@@ -1,0 +1,50 @@
+package com.fototechparivarstalls.model.GetAddons;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
+
+public class GetAddonsResponse {
+
+    @SerializedName("message")
+    @Expose
+    private String message;
+    @SerializedName("StatusCode")
+    @Expose
+    private String StatusCode;
+    @SerializedName("data")
+    @Expose
+    private ArrayList<GetAddonsDetails> data = null;
+
+    public GetAddonsResponse(String message, String statusCode, ArrayList<GetAddonsDetails> data) {
+        this.message = message;
+        this.StatusCode = statusCode;
+        this.data = data;
+    }
+
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getStatusCode() {
+        return StatusCode;
+    }
+
+    public void setStatusCode(String statusCode) {
+        StatusCode = statusCode;
+    }
+
+    public ArrayList<GetAddonsDetails> getData() {
+        return data;
+    }
+
+    public void setData(ArrayList<GetAddonsDetails> data) {
+        this.data = data;
+    }
+}

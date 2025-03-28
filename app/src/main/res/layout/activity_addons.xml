@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddonsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:id="@+id/back"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Add-ons"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kumbhsans_semibold"
+            android:textSize="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FBEED1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Item"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kumbhsans_medium"/>
+
+        <TextView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="Unit Price"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/kumbhsans_medium"/>
+
+        <TextView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Qty"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/kumbhsans_medium"/>
+
+    </LinearLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </ScrollView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Total Payment"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/kumbhsans_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Total"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="00"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/kumbhsans_medium"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idSubmit"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:text="@string/submit"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:fontFamily="@font/kumbhsans_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#231F20"
+        android:textSize="16sp" />
+
+</LinearLayout>

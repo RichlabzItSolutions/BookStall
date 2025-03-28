@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PaymentsHistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:id="@+id/back"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/Payments_History"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kumbhsans_semibold"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/dataNotCome"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/kumbhsans_bold"
+        android:text="Payments History Not Found."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:id="@+id/PaymentHistoryLinear"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FBEED1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:id="@+id/eventTitle"
+                android:layout_gravity="center"
+                android:text="Digi Media 2024"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kumbhsans_semibold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_red"
+                        android:layout_marginEnd="@dimen/_4sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eventLocation"
+                        android:text="Bangalore"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/kumbhsans_medium"/>
+
+                    <!--  <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Nov - 12, 13, 14"
+                          android:textSize="@dimen/_14sdp"
+                          android:textColor="@android:color/darker_gray"
+                          android:layout_marginStart="@dimen/_16sdp"
+                          android:fontFamily="@font/kumbhsans_regular"/>-->
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventDate"
+                    android:text="Nov - 12, 13, 14"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:fontFamily="@font/kumbhsans_medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Payment 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F5F7FA"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:gravity="end"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kumbhsans_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Payment Mode"
+                    android:gravity="end"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/kumbhsans_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:text="Amount"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/kumbhsans_medium"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#7E7E7E"
+                android:id="@+id/IdReferNumber"
+                android:text="(refno #RGT456YHJU)"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/kumbhsans_regular"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/IdTotalLiner"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Total   "
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/kumbhsans_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Total"
+                    android:textColor="@color/black"
+                    android:text="00/-"
+                    android:textSize="@dimen/_17sdp"
+                    android:fontFamily="@font/kumbhsans_medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

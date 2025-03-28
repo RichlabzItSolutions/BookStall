@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:padding="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/exposchedules"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_26sdp"
+            android:fontFamily="@font/kumbhsans_bold"
+            android:textColor="@color/black"
+            android:text="@string/login"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/kumbhsans_regular"
+            android:textColor="#231F20"
+            android:text="@string/Please_enter_below_details_to_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/kumbhsans_medium"
+            android:textColor="@color/black"
+            android:text="@string/Mobile_Number" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner_service">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_toRightOf="@+id/username_icon"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/kumbhsans_regular"                android:inputType="number"
+                android:hint="@string/Mobile_Number"
+                android:textColorHint="#848484"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:background="#F7F8FA"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ICON -->
+            <ImageView
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:id="@+id/username_icon"
+                android:src="@drawable/ic_phone"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_40sdp" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/kumbhsans_medium"
+            android:textColor="@color/black"
+            android:text="@string/Password"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner_service">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_toRightOf="@+id/password_icon"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/kumbhsans_regular"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColorHint="#848484"
+                android:background="#F7F8FA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ICON -->
+            <ImageView
+                android:padding="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:id="@+id/password_icon"
+                android:src="@drawable/ic_lock"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_40sdp" />
+
+            <ImageView
+                android:padding="@dimen/_11sdp"
+                android:id="@+id/iv_show_password"
+                android:src="@drawable/ic_password_off"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idLogin"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="@string/login"
+            android:fontFamily="@font/kumbhsans_semibold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#231F20"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idForgotPassword"
+                android:textSize="16sp"
+                android:textColor="#FF0003"
+                android:layout_gravity="right"
+                android:text="Forgot Password"/>
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin"
+                android:textSize="16sp"
+                android:textColor="#FF0003"
+                android:layout_gravity="right"
+                android:text="@string/Sign_in"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

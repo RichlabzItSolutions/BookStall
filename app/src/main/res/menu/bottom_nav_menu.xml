@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <!--<item
+        android:id="@+id/MyPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Events"
+        android:icon="@drawable/ic_events"/>-->
+    <item
+        android:id="@+id/Requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="My Bookings"
+        android:icon="@drawable/calendar"/>
+    <item
+        android:id="@+id/Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"/>
+</menu>

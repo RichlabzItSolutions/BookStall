@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/closeMaId"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_cancel_black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/Liner">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Cancel Booking"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/Reason"
+        android:background="@drawable/bg_edittext_round_corner"
+        android:fontFamily="@font/kumbhsans_regular"
+        android:hint="Enter Reason"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="start|top"
+        android:textColor="#6B7077" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idSubmit"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:text="@string/submit"
+        android:fontFamily="@font/kumbhsans_medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#231F20"
+        android:textSize="@dimen/_14sdp" />
+
+
+
+</LinearLayout>

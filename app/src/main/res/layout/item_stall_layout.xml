@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/LinerId"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/_4sdp">
+
+    <!-- Column A -->
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gray_box"
+        android:text="9×5"
+        android:gravity="center"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/kumbhsans_regular" />
+
+  <!--  &lt;!&ndash; Column B &ndash;&gt;
+    <TextView
+        android:id="@+id/column_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gray_box"
+        android:text="9×5"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/kumbhsans_regular" />
+
+    &lt;!&ndash; Column C &ndash;&gt;
+    <TextView
+        android:id="@+id/column_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_orange_box"
+        android:text="6×5"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/kumbhsans_regular" />
+
+    &lt;!&ndash; Column D &ndash;&gt;
+    <TextView
+        android:id="@+id/column_d"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gray_box"
+        android:text="10×12"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/kumbhsans_regular" />-->
+
+</LinearLayout>

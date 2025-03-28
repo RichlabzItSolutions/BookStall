@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/closeMaId"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/et_issueType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:layout_marginTop="10dp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rounded_corner_service"
+        android:textSize="14sp"
+        android:fontFamily="@font/kumbhsans_regular"
+        android:textColor="#848484"
+        android:textColorHint="#848484"
+        android:hint="Issue type" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/message"
+        android:background="@drawable/bg_edittext_round_corner"
+        android:fontFamily="@font/kumbhsans_regular"
+        android:hint="Message"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="start|top"
+        android:textColor="#6B7077" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idSubmit"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/submit"
+        android:fontFamily="@font/kumbhsans_medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#231F20"
+        android:textSize="@dimen/_14sdp" />
+
+
+
+</LinearLayout>

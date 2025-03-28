@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/upcomingEventsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="@dimen/_5sdp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:id="@+id/IdEventImage"
+            android:src="@drawable/ic_upcoming_events"
+            android:contentDescription="Event Banner"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_4sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Digi Image 2024"
+                android:id="@+id/IdEventName"
+                android:minLines="2"
+                android:fontFamily="@font/kumbhsans_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"/>
+
+          <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_10sdp"
+                android:text=" Date :- 10,12,13,14"
+                android:id="@+id/date"
+                android:fontFamily="@font/kumbhsans_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#FF4555"/>-->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_4sdp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:src="@drawable/ic_location"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Bangalore"
+                    android:id="@+id/IdLocation"
+                    android:fontFamily="@font/kumbhsans_medium"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginStart="@dimen/_4sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:src="@drawable/ic_calendars"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="17"
+                    android:fontFamily="@font/kumbhsans_medium"
+                    android:id="@+id/date"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginStart="@dimen/_4sdp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_4sdp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:src="@drawable/ic_users"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nikunj"
+                    android:id="@+id/idFirstName"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/kumbhsans_medium"
+                    android:layout_marginStart="@dimen/_4sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/idCallLiner"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:src="@drawable/ic_call"
+                    android:contentDescription="Phone Icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91-778055180"
+                    android:fontFamily="@font/kumbhsans_medium"
+                    android:id="@+id/IdPhone"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_4sdp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+     <!--   <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:id="@+id/IdBookStall"
+            android:text="@string/BOOK_STALL"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"/>-->
+    </LinearLayout>
+
+</LinearLayout>

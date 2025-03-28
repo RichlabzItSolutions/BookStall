@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/_10sdp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:id="@+id/IdLeadLi"
+        android:background="@drawable/dashboard_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/IdLeadImage"
+            app:srcCompat="@drawable/ic_tranformation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/IdLeadName"
+            android:textColor="@color/black"
+            android:padding="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/kumbhsans_semibold"
+            android:text="Confirmation Letter" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

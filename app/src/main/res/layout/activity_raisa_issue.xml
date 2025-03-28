@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RaisaIssueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:id="@+id/back"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/Raisa_a_Issue"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kumbhsans_semibold"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/et_issueType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_drop_down"
+            android:layout_marginTop="10dp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/rounded_corner_service"
+            android:textSize="14sp"
+            android:fontFamily="@font/kumbhsans_regular"
+            android:textColor="#848484"
+            android:textColorHint="#848484"
+            android:hint="Issue type" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_85sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/message"
+            android:background="@drawable/bg_edittext_round_corner"
+            android:fontFamily="@font/kumbhsans_regular"
+            android:hint="Message"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="start|top"
+            android:textColor="#6B7077" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idSubmit"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/submit"
+            android:fontFamily="@font/kumbhsans_medium"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#231F20"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PreviousIssuesText"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Previous Issues List"
+            android:fontFamily="@font/kumbhsans_semibold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/dataNotCome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/kumbhsans_bold"
+            android:gravity="center"
+            android:text="Previous Issues Not Found."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

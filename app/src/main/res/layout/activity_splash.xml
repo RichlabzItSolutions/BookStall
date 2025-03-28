@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/firstscreen"
+    tools:context=".activity.SplashActivity">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_40sdp"
+            android:src="@drawable/exposchedules"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_26sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:text="@string/Welcome_to"
+        android:textColor="@color/black"
+        android:fontFamily="@font/kumbhsans_regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:textSize="@dimen/_26sdp"
+        android:text="@string/Event_Stall_Booking"
+        android:textColor="@color/black"
+        android:fontFamily="@font/kumbhsans_bold"/>
+
+
+
+
+    <ImageView
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_40sdp"
+        android:src="@drawable/ic_stall"/>-->
+
+
+</LinearLayout>

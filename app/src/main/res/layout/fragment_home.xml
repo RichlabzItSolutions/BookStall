@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- Header Section with User Info and Notification Icon -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/userPic"
+            android:src="@drawable/ic_user"
+            android:contentDescription="User Avatar"
+            android:layout_marginEnd="@dimen/_8sdp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idFirstName"
+                android:text="Welcome, Akeeb Shaik"
+                android:fontFamily="@font/kumbhsans_semibold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hyderabad"
+                android:id="@+id/IdLocation"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#7E7E7E"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Upcoming Events Section Title -->
+    <TextView
+        android:id="@+id/upcomingEventsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Upcoming_Events"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/kumbhsans_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/dataNotComeUpcoming"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/kumbhsans_bold"
+        android:text="Upcoming Events Not Found."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/upcomingEventsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <!-- Upcoming Events Card -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:scrollbars="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/upcomingEventsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--
+    <LinearLayout
+        android:id="@+id/upcomingEventsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/upcomingEventsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/ic_upcoming_events"
+            android:contentDescription="Event Banner"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digi Image 2024"
+            android:fontFamily="@font/kumbhsans_bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_4sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_location"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bangalore"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_4sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_4sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_call"
+                android:contentDescription="Phone Icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91-778055180"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_4sdp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="@string/BOOK_STALL"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"/>
+    </LinearLayout>
+-->
+
+    <!-- Past Events Section Title -->
+    <TextView
+        android:id="@+id/pastEventsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Past_Events"
+        android:fontFamily="@font/kumbhsans_bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/dataNotComePast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kumbhsans_medium"
+        android:gravity="center"
+        android:text="Past Events Not Found."
+        android:textColor="#7E7E7E"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pastEventsTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPast"
+        android:layout_width="0dp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:scrollbars="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pastEventsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Past Events Card -->
+   <!-- <LinearLayout
+        android:id="@+id/pastEventsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/pastEventsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/past_event_image"
+            android:contentDescription="Past Event Banner"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

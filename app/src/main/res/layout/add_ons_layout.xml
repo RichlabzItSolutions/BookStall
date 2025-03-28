@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_3sdp">
+
+        <TextView
+            android:id="@+id/idItemName"
+            android:layout_width="@dimen/_100sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kumbhsans_medium"
+            android:text="Chairs"
+            android:paddingRight="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_3sdp"
+            android:id="@+id/idUnitPrice"
+            android:text="250"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kumbhsans_medium"/>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idAmount"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="5000/-"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/kumbhsans_medium"/>-->
+
+        <LinearLayout
+            android:id="@+id/ll_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FAAF40"
+            android:gravity="end"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btnMinus"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/border_grey_round_corners"
+                android:backgroundTint="#FAAF40"
+                android:fontFamily="@font/kumbhsans_medium"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:fontFamily="@font/kumbhsans_medium"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/btnPlus"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/border_grey_round_corners"
+                android:backgroundTint="#FAAF40"
+                android:fontFamily="@font/kumbhsans_medium"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_18sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
